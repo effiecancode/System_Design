@@ -8,3 +8,11 @@ Intuitively, you can implement a rate limiter at either the client or server-sid
 • Client-side implementation. Generally speaking, client is an unreliable place to enforce rate limiting because client requests can easily be forged by malicious actors. Moreover, we might not have control over the client implementation.
 • Server-side implementation. Figure 4-1 shows a rate limiter that is placed on the server- side.
 
+## Algorithms for rate limiting
+Rate limiting can be implemented using different algorithms, and each of them has distinct pros and cons. Even though this chapter does not focus on algorithms, understanding them at high-level helps to choose the right algorithm or combination of algorithms to fit our use cases. Here is a list of popular algorithms:
+• Token bucket - most used
+• Leaking bucket
+• Fixed window counter • Sliding window log
+• Sliding window counter
+
+
