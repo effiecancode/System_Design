@@ -2,7 +2,7 @@
 
 [Project Link](https://github.com/effiecancode/CRM-backend)
 
-* Requires ensuring that IDs are globally unique, efficient to generate, and scalable without creating bottlenecks
+* Requires ensuring that IDs are globally unique, efficient to generate, and scalable without creating bottlenecks - across multiple databases.
 
 ## Choosing the ID generator
 
