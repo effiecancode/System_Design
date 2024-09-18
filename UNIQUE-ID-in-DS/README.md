@@ -1,6 +1,6 @@
 # Designing a unique ID generator in distributed systems
 
-# [Project Link](https://github.com/effiecancode/CRM-backend)
+[Project Link](https://github.com/effiecancode/CRM-backend)
 
 * Requires ensuring that IDs are globally unique, efficient to generate, and scalable without creating bottlenecks
 
