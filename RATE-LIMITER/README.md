@@ -15,4 +15,3 @@ Rate limiting can be implemented using different algorithms, and each of them ha
 • Fixed window counter • Sliding window log
 • Sliding window counter
 
-
