@@ -1,6 +1,10 @@
-# app's controllers
+# app logic
 
-from django.shortcuts import get_object_or_404, render, redirect
+from rest_framework.views import APIView
+from rest_framework.response import Response
 
-def hello(request):
-    return render(request, "helloworld/home.html")
+class Helloworld(APIView):
+    def get(self, request):
+        return Response({'message': "Hello, World!"})
+
+
