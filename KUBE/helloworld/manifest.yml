@@ -6,5 +6,6 @@ spec:
   containers:
   - name: helloworld
     image: helloworld-helloworld:latest
+    imagePullPolicy: IfNotPresent
     ports:
     - containerPort: 8000
