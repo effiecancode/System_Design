@@ -35,3 +35,5 @@
 ## Resource Utilization
 
 To maximize CPU usage, you can use one thread per processor core . This approach ensures that all available computational resources are utilized efficiently, especially in systems with multiple cores
+
+* The examples cover various scenarios where threading is useful in system design. * * The choice of threading model (e.g., Python's threading, multiprocessing, or libraries like asyncio) depends on the specific requirements of your application and the nature of the tasks being performed.
