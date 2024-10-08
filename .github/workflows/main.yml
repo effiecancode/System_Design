@@ -1,0 +1,65 @@
+name: CI/CD pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: set up Docker Buildx
+        uses: docker/setup-buildx-actions@v2
+
+      - name: Log in Amazon ECR
+        id: ecr_login
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build the docker image
+        run: |
+          docker build -t ${{ secrets.ECR_REGISTRY_URL }}/app-api:latest .
+
+      - name: Push docker image to Amazon ECR
+        run: |
+          docker push ${{ secrets.ECR_REGISTRY_URL }}/app-api:latest
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.3.7
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan
+
+      - name: Terraform Apply
+        run: terraform apply
+
+      - name: Set up kubectl
+        uses: azure/setup-kubectl@v2
+        with:
+          version: "v1.25.0"
+
+      - name: Configure kubectl with kubeConfig
+        run: |
+          echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 --decode > ~/.kube/config
+
+      - name: Apply Kubernetes configuration
+        run: |
+          kubectl apply -f k8s/deployment.yaml
