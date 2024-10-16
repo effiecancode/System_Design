@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mkvzAs5E+iNnvldm/WFkp1lXq6Bq1PAMv+yZo8aNNQB7F0EC7CexPbEUVhiOUYSv7jgFiz+Cpp48HM/xyh8Jug==",
+  "success": true,
+  "projectFilePath": "/Users/mac/System-Cloud/System_Design/AWS-SDK-for.NET/project1/project1.csproj",
+  "expectedPackageFiles": [
+    "/Users/mac/.nuget/packages/awssdk.core/3.7.400.35/awssdk.core.3.7.400.35.nupkg.sha512",
+    "/Users/mac/.nuget/packages/awssdk.ec2/3.7.409.2/awssdk.ec2.3.7.409.2.nupkg.sha512",
+    "/Users/mac/.nuget/packages/awssdk.s3/3.7.404.7/awssdk.s3.3.7.404.7.nupkg.sha512"
+  ],
+  "logs": []
+}

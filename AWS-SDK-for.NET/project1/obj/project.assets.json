@@ -1,0 +1,220 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "AWSSDK.Core/3.7.400.35": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.EC2/3.7.409.2": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.400.35, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.EC2.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.EC2.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.404.7": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.400.35, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AWSSDK.Core/3.7.400.35": {
+      "sha512": "doI5+qqZWfy2m0DlpWy7hnkTJKYMX7Oc3e++zM6nMNVUrWLy6xuKYw0uhuVw2uUpWcf16e4mgsJili1Y7/FVNA==",
+      "type": "package",
+      "path": "awssdk.core/3.7.400.35",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.7.400.35.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/net8.0/AWSSDK.Core.dll",
+        "lib/net8.0/AWSSDK.Core.pdb",
+        "lib/net8.0/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.EC2/3.7.409.2": {
+      "sha512": "dFtuT311eYsPf9K+9Qu3h99xgW2pvve6QBb1suLuoW/Di3wgoB0tA2NjJf2XicwBETHCGCWI43sij1CZqttcQA==",
+      "type": "package",
+      "path": "awssdk.ec2/3.7.409.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.EC2.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.ec2.3.7.409.2.nupkg.sha512",
+        "awssdk.ec2.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.EC2.dll",
+        "lib/net35/AWSSDK.EC2.pdb",
+        "lib/net35/AWSSDK.EC2.xml",
+        "lib/net45/AWSSDK.EC2.dll",
+        "lib/net45/AWSSDK.EC2.pdb",
+        "lib/net45/AWSSDK.EC2.xml",
+        "lib/net8.0/AWSSDK.EC2.dll",
+        "lib/net8.0/AWSSDK.EC2.pdb",
+        "lib/net8.0/AWSSDK.EC2.xml",
+        "lib/netcoreapp3.1/AWSSDK.EC2.dll",
+        "lib/netcoreapp3.1/AWSSDK.EC2.pdb",
+        "lib/netcoreapp3.1/AWSSDK.EC2.xml",
+        "lib/netstandard2.0/AWSSDK.EC2.dll",
+        "lib/netstandard2.0/AWSSDK.EC2.pdb",
+        "lib/netstandard2.0/AWSSDK.EC2.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.S3/3.7.404.7": {
+      "sha512": "FuZJn+xNuro/XgO71aQ9EN71+5ivwo/NL8jz5avZ+wVBrm1BPEreyan8R7ZuDwDV5v3tl1Wk5rUyCqcln1EY5w==",
+      "type": "package",
+      "path": "awssdk.s3/3.7.404.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
+        "analyzers/dotnet/cs/SharedAnalysisCode.dll",
+        "awssdk.s3.3.7.404.7.nupkg.sha512",
+        "awssdk.s3.nuspec",
+        "images/AWSLogo.png",
+        "lib/net35/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.pdb",
+        "lib/net35/AWSSDK.S3.xml",
+        "lib/net45/AWSSDK.S3.dll",
+        "lib/net45/AWSSDK.S3.pdb",
+        "lib/net45/AWSSDK.S3.xml",
+        "lib/net8.0/AWSSDK.S3.dll",
+        "lib/net8.0/AWSSDK.S3.pdb",
+        "lib/net8.0/AWSSDK.S3.xml",
+        "lib/netcoreapp3.1/AWSSDK.S3.dll",
+        "lib/netcoreapp3.1/AWSSDK.S3.pdb",
+        "lib/netcoreapp3.1/AWSSDK.S3.xml",
+        "lib/netstandard2.0/AWSSDK.S3.dll",
+        "lib/netstandard2.0/AWSSDK.S3.pdb",
+        "lib/netstandard2.0/AWSSDK.S3.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "AWSSDK.EC2 >= 3.7.409.2",
+      "AWSSDK.S3 >= 3.7.404.7"
+    ]
+  },
+  "packageFolders": {
+    "/Users/mac/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/mac/System-Cloud/System_Design/AWS-SDK-for.NET/project1/project1.csproj",
+      "projectName": "project1",
+      "projectPath": "/Users/mac/System-Cloud/System_Design/AWS-SDK-for.NET/project1/project1.csproj",
+      "packagesPath": "/Users/mac/.nuget/packages/",
+      "outputPath": "/Users/mac/System-Cloud/System_Design/AWS-SDK-for.NET/project1/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/mac/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "dependencies": {
+          "AWSSDK.EC2": {
+            "target": "Package",
+            "version": "[3.7.409.2, )"
+          },
+          "AWSSDK.S3": {
+            "target": "Package",
+            "version": "[3.7.404.7, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
